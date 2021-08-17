@@ -1,0 +1,843 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h4,
+h5,
+a,
+p,
+span,
+input,
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Block Element Modifier*/
+
+header {
+    width: 100%;
+    padding: 90px 0 10px 0;
+}
+
+.d-flex .btn-outline-success {
+    background: #2500f9 !important;
+    color: white !important;
+    padding: 16px;
+    border-radius: 35px;
+    font-weight: 600;
+    width: 163px;
+}
+
+.btn-outline-success:hover {
+    background: #2006b8 !important;
+}
+
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+.nav-link {
+    color: #242f51 !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: darkorange !important;
+    transform: scale(1.1);
+    transition: all .15s linear;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #fcae61;
+}
+
+.nav-link:hover:before {
+    width: 100%;
+    transition: 0.5s;
+}
+/*Dòng xanh thứ nhất*/
+
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/img/banner.png);
+    /*height: 100vh;*/
+}
+
+.banner-hint {
+    display: inline-block;
+    background: #e2eaed;
+    padding: 0px 42px 0px 0px;
+    border-radius: 35px;
+}
+
+.banner-hint img {
+    margin-left: 0 !important;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+    color: #242f51;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: 80%;
+    color: #242f51;
+}
+
+.banner-text a {
+    margin-right: 32px;
+    text-decoration: none;
+}
+
+.banner .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+.banner .col-md-6 img {
+    width: 100%;
+    margin-left: 150px;
+}
+
+.banner-button .btn-outline-success {
+    background: #2500f9 !important;
+    color: white !important;
+    padding: 15px;
+    border-radius: 35px;
+    font-weight: 600;
+    width: 27%;
+}
+
+.banner-button .btn-outline-success:hover {
+    background: #2006b8 !important;
+}
+
+.sponsor {
+    margin: 115px 0;
+}
+
+.sponsor p {
+    color: #242f51;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.owl-carousel .owl-item img {
+    width: auto !important;
+} 
+/*Dòng xanh thứ 2*/
+
+.features {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.features h1 {
+    color: #242f51;
+    font-size: 36px;
+    font-weight: 700;
+    width: 50%;
+    line-height: 50px;
+}
+
+.features .col-md-6 p {
+    color: #616368;
+    font-size: 16px;
+    width: 75%;
+    margin-bottom: 90px;
+}
+/*features-items*/
+
+.features-items .item-1 h4 {
+    color: #f55767;
+    font-weight: 600;
+}
+
+.features-items .item-1 p {
+    margin-bottom: 60px;
+}
+
+.item-h4-2 h4 {
+    color: #2563ff !important;
+    font-weight: 600;
+}
+
+.item-h4-3 h4 {
+    color: #40975f !important;
+    font-weight: 600;
+}
+/*Dòng xanh thứ ba*/
+
+.smart .col-md-6 h1 {
+    color: #242f51;
+    font-size: 36px;
+    font-weight: 600;
+    width: 90%;
+    padding: 0 80px;
+    border-right: 1.75px solid #bbbbbb;
+}
+
+.smart .col-md-6:nth-child(2) {
+    display: flex;
+    align-self: center;
+}
+
+.smart .col-md-6 p {
+    color: #616368;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding: 15px;
+}
+
+.smart-1 {
+    padding-bottom: 50px;
+    margin-left: 100px;
+}
+
+.smart-1 .col-md-4 {
+    padding-right: 80px;
+}
+
+.smart-1 .col-md-4 .icon {
+    margin-bottom: 30px;
+}
+
+.smart-1 .item-h4-31 h4 {
+    color: #616368;
+    font-weight: 600;
+}
+
+.smart-1 .item-h4-31 p {
+    color: #616368;
+    font-size: 16px;
+    font-weight: 400;
+    width: 85%;
+}
+
+.smart-1 .item-h4-32 h4 {
+    color: #2563ff !important;
+    font-weight: 600;
+}
+
+.smart-1 .item-h4-32 p {
+    color: #616368;
+    font-size: 16px;
+    font-weight: 400;
+    width: 85%;
+}
+
+.smart-1 .item-h4-33 h4 {
+    color: #40975f !important;
+    font-weight: 600;
+}
+
+.smart-1 .item-h4-33 p {
+    color: #616368;
+    font-size: 16px;
+    font-weight: 400;
+    width: 85%;
+}
+/*Dòng xanh thứ tư*/
+
+.designed {
+    padding-bottom: 70px;
+}
+
+.designed .col-md-6 .img {
+    width: 120%;
+    transform: translateX(-10%);
+}
+
+.designed h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #242f51;
+    width: 100%;
+}
+
+.designed p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #616368;
+    width: 110%;
+    margin-bottom: 30px;
+}
+
+.designed .btn-outline-success {
+    border-radius: 35px;
+    font-weight: 700;
+    padding: 15px;
+    width: 40%;
+}
+/*Dòng xanh thứ năm*/
+
+.Why {
+    padding: 80px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.Why .col-md-12 h1 {
+    color: #242f51;
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.Why .col-md-12 p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #616368;
+}
+
+.Why .col-md-4 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #242f51;
+    margin-bottom: 15px;
+}
+
+.Why .col-md-4 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #616368;
+    width: 80%;
+    margin: 0 auto 80px auto;
+}
+
+.Why .line2 {
+    margin-top: -45px;
+}
+
+.Why .icon {
+    margin-bottom: 30px;
+}
+
+.Why .row {
+    margin-bottom: 40px;
+}
+
+.Why .col-md-4 {
+    padding: 0 40px;
+}
+/*Dòng xanh thứ sáu*/
+
+.Ultimate {
+    padding: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.Ultimate .col-md-5 img {
+    width: 120%;
+    margin-left: 55px;
+    margin-top: 80px;
+    transform: translateX(-10%);
+}
+
+.Ultimate .row .col-md-7 h1 {
+    color: #242f51;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: min(350px, 80%);
+}
+
+.Ultimate .row .col-md-7 p {
+    color: #616368;
+    margin-bottom: 60px;
+    font-size: 17px;
+    font-weight: 500;
+    width: min(450px, 80%);
+}
+
+.Ultimate .col-md-7 .row {
+    margin-bottom: 40px;
+}
+
+.Ultimate .col-md-6 img {
+    margin-bottom: 35px;
+}
+
+.Ultimate .col-md-6 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #242f51;
+    margin-bottom: 12px;
+}
+
+.Ultimate .col-md-6 p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #616368;
+    font-weight: 400;
+    width: 90%;
+}
+
+.Ultimate .btn-outline-success {
+    width: 19%;
+    padding: 15px;
+    border-radius: 35px;
+    font-weight: 700;
+    background: #2500f9 !important;
+    color: white !important;
+}
+/*Dòng xanh thứ bảy*/
+
+.Pricing {
+    padding: 80px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.Pricing h1 {
+    color: #242f51;
+    font-weight: 700;
+    font-size: 600;
+    justify-content: center;
+}
+
+.Pricing .col-md-12 p {
+    font-size: 16px;
+    margin: 35px 0 80px 0;
+    color: #242f51;
+}
+
+.trigger {
+    padding: 4px;
+    border: 2px solid #ebebeb;
+    display: inline-block;
+    border-radius: 35px;
+}
+
+.trigger .active {
+    background: #2500f9;
+    color: white;
+    padding: 15px 42px;
+    border-radius: 35px;
+    border: none;
+}
+
+.table-active:hover {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+
+.trigger .inactive {
+    background: transparent;
+    color: #242f51;
+    padding: 15px 42px;
+    border-radius: 35px;
+    border: none;
+}
+
+.table-inactive :hover {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+
+.trigger .active :focus {
+    border: none;
+    outline: none;
+}
+
+.trigger .inactive :focus {
+    border: none;
+    outline: none;
+    color: white;
+    background: #2500f9;
+    padding: 15px 42px;
+    border-radius: 35px;
+}
+
+.Pricing .btn-outline-success {
+    padding: 14px;
+    border-radius: 35px;
+    background: #2500f9 !important;
+    color: white !important;
+}
+
+.card {
+    margin: 32px;
+}
+
+.card-header {
+    padding: 30px;
+    background: #f6f8fa;
+}
+
+.card-header h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin: 40px 0 32px 0;
+}
+
+.card-header h1 span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #999ca5;
+}
+
+.card-header h4 {
+    font-weight: 700;
+    color: #242f51;
+}
+
+.card-header p {
+    font-size: 16px;
+    color: #999ca5;
+}
+
+.card-body ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.card-body ul li {
+    list-style: none;
+    margin: 12px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #999ca5;
+}
+
+.card-body a {
+    margin: 25px 25px 15px 25px;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.table-active {
+    border: none;
+    box-shadow: 10px 12px 12px 0px rgba(0, 0, 0, 0.10);
+}
+
+.table-inactive .card-header {
+    border: none;
+}
+/*Dòng xanh thứ tám*/
+
+.Testimonial {
+    padding: 80px 0;
+}
+
+.Testimonial .row .col-md-6:nth-child(1) img {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) h1 {
+    font-size: 40px;
+    width: 80%;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #242f51;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #616368;
+    width: 80%;
+}
+
+.Testimonial .row .col-md-6:nth-child(1) .item {
+    margin-top: 20px;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .item i {
+    color: #ffcc00;
+    margin-bottom: 25px;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .item h5 {
+    margin-bottom: 20px;
+    color: #242f51;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .item h6 {
+    color: #242f51;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .item p {
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    width: 91%;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .owl-nav {
+    display: inline-block;
+    width: 120px;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .owl-nav::before {
+    content: '';
+    width: 1px;
+    height: 1 rem;
+    background-color: #cccccc;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .owl-nav button {
+    outline: none;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .owl-nav button:last-child {
+    padding-right: 5px !important;
+}
+
+.Testimonial.row .col-md-6:nth-child(2) .owl-nav button:hover {
+    background-color: transparent;
+}
+
+.Testimonial .row .col-md-6:nth-child(2) .owl-item img {
+    margin: inherit;
+    /* width: 20%; */
+    max-width: 40%;
+    height: auto;
+}
+
+.Testimonial .col-md-6 p {
+    color: #616368;
+    font-size: 15px;
+    font-weight: 400;
+    width: 85%;
+}
+/*Dòng thứ chín*/
+
+.FAQ {
+    padding: 80px 0;
+}
+
+.FAQ .row .col-md-8 h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #242f51;
+}
+
+.FAQ .row .col-md-8 p {
+    width: 85%;
+    margin: 30px auto 0 auto;
+    font-size: 15px;
+    color: #616368;
+    font-weight: 400;
+    width: 95%;
+}
+
+.FAQ .accordion {
+    margin-top: 60px;
+}
+
+.FAQ .accordion-item {
+    padding: 8px 0 !important;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+}
+
+.FAQ .accordion-item h2 {
+    font-size: 20px;
+    color: #242f51;
+    font-weight: 700;
+}
+
+.FAQ .accordion-item p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #242f51;
+}
+
+.FAQ .accordion-button {
+    background-color: #f5f5f5;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--prussian-blue);
+}
+
+.FAQ .accordion-button:focus,
+.FAQ .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.FAQ .accordion-button::after {
+    background-image: none;
+    content: '+';
+}
+
+.FAQ .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: '-';
+}
+/*Dòng thứ mười*/
+
+.Download {
+    padding: 40px 0;
+    border-top: 2px solid #f4f4f4;
+}
+
+.Download .col-md-7 {
+    margin-top: -6px;
+}
+
+.Download h1 {
+    color: #242f51;
+    margin: 50px 0 30px 0;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.Download p {
+    color: #616861;
+    margin-top: 50px;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Download .app {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    /*background-color: black;*/
+    padding-right: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.Download .app:hover {
+    transform: scale(1.2);
+    transition: all 0.5 linear;
+}
+
+.Download .col-md-5 img {
+    width: 137%;
+    margin-top: 29px;
+    margin-left: -84px;
+    position: relative;
+    margin-bottom: -41px;
+}
+
+.full-width {
+    left: -10%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: -50%;
+    bottom: -53px;
+    width: 100vw;
+}
+/*footer*/
+
+footer {
+    margin-top: -51px;
+    background-color: #09142e;
+}
+
+footer .navbar-banner {
+    margin-top: 20px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul:nth-child(2) li {
+    padding: 20px;
+}
+
+footer ul:nth-child(2) li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul:nth-child(2) a:hover {
+    color: #dddddd;
+}
+
+footer ul:nth-child(3) li {
+    padding: 10px;
+    margin: 10px 20px 20px 20px;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a i {
+    color: white;
+    width: 2px;
+    font-size: 10px;
+}
+
+footer .justify-content-center {
+    margin-top: 10px;
+}
+
+footer img {
+    margin: 70px 0 0px 0;
+}
+
+footer ul:nth-child(3) li a {
+    color: var(--medium-grey);
+}
+
+footer .footer-icon i:hover {
+    color: #eea55e;
+    transform: skewX(160deg);
+    transition: all 0.3s linear;
+}
+
+footer p {
+    color: #3d456a;
+    margin: 30px 0 90px 0;
+}
